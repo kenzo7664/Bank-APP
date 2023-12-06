@@ -249,7 +249,6 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // Lectures
-
 // Parsing
 console.log(Number.parseInt('30px', 10));
 console.log(Number.parseFloat('2.5rem'));
@@ -261,3 +260,28 @@ console.log(Number.isNaN(+"20px"));
 console.log(Number.isFinite(20));
 console.log(Number.isFinite(+"20px"));
 console.log(Number.isFinite(23 / 0));
+// Create a date 
+/*
+const now = new Date()
+console.log(now);
+console.log(new Date('Dec 06 2023'));
+console.log(new Date(account1.movementsDates[0]));
+
+console.log(new Date(2037, 10, 17, 23, 34, 9));
+console.log(new Date(2023, 10, 31));
+*/
+//working with dates
+const future = new Date(2037, 10, 17, 23, 34, 9)
+console.log(future);
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getHours());
+console.log(future.getMinutes());
+console.log(future.getSeconds());
+console.log(future.toISOString());
+console.log(future.getTime());
+
+future.setFullYear(2040)
+console.log(future);
