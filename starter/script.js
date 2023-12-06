@@ -255,3 +255,15 @@ labelBalance.addEventListener("click", function () {
     if (i % 3 === 0) row.style.backgroundColor = "violet"
   })
 })
+
+// BigInt
+console.log(24565678998765434567876545678n);
+console.log(BigInt(12345676545678987656787678767876n));
+
+// Operations with BigInt
+console.log(1000n + 1000n);
+console.log(20n > 15);
+console.log(20n === 15);
+
+console.log(10n / 3n);
+console.log(10 / 3);
