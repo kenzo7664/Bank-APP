@@ -261,7 +261,7 @@ btnClose.addEventListener('click', function (e) {
 
   inputCloseUsername.value = inputClosePin.value = '';
 });
-// Sorting Transactionns by deposit or withdrawal
+// Sorting Transactions by deposit or withdrawal
 let sorted = false;
 btnSort.addEventListener('click', function (e) {
   e.preventDefault();
@@ -269,18 +269,12 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted;
 });
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
 // Lectures
+// Operation with Dates 
+const future = new Date(2037, 10, 19, 15, 23)
+console.log(+(future));
 
-// Parsing
-console.log(Number.parseInt('30px', 10));
-console.log(Number.parseFloat('2.5rem'));
+const daysPassed = (date1, date2) => Math.abs(date2 - date1) / (1000 * 60 * 60 * 24)
 
-// isNan
-console.log(Number.isNaN(20));
-console.log(Number.isNaN(+"20px"));
-// isFinite
-console.log(Number.isFinite(20));
-console.log(Number.isFinite(+"20px"));
-console.log(Number.isFinite(23 / 0));
+const days = daysPassed(new Date(2037, 10, 30), new Date(2037, 10, 24))
+console.log(days);
