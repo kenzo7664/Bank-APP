@@ -297,3 +297,8 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted;
 });
 
+// setTimeout
+const ingredients = ["Tomato", "cherry"]
+const pizzaTimer = setTimeout((ing1, ing2) =>
+  console.log(`Here is your Pizza with ${ing1} and ${ing2}`), 3000, ...ingredients)
+if (ingredients.includes("cherry")) clearTimeout(pizzaTimer)
